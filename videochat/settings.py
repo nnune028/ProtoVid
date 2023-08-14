@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!kh-gn8y3(9d2qhcmcr1+obt32i23j3fzzb7d$r6^^um&$u_mp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'protovid-6eb647103ced.herokuapp.com/','.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'protovid-6eb647103ced.herokuapp.com/', '.herokuapp.com']
 
 
 # Application definition
@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'videochat.urls'
