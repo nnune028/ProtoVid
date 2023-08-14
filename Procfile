@@ -1,1 +1,1 @@
-web: gunicorn protovid --log-file -
+web: gunicorn videochat --log-file -
